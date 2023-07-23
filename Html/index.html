@@ -5,22 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <!-- Skitter Styles -->
+    <link href="../css/skitter.css" type="text/css" media="all" rel="stylesheet" />
+   <!-- Skitter JS -->
+   <script src="../js/jquery.min.js"></script>
+   <script src="../js/jquery.ease.min.js"></script>
+   <script src="../js/jquery.skitter.min.js"></script>
+      <!-- Init Skitter -->
+  <script type="text/javascript" language="javascript">
+    $(document).ready(function() {
+      $('.skitter-large').skitter({
+        responsive: {
+          small: {
+            animation: 'fade',
+            max_width: 768,
+            suffix: '-small'
+          },
+          medium: {
+            animation: 'directionRight',
+            max_width: 1024,
+            suffix: '-medium'
+          }
+        }
+      });
+    });
+  </script>
 </head>
 <body>
     <header>
-        <nav>        
-            <a href=""><img src="../img/logo/1.png" alt=""></a>
-           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT US </a></li>
-            <li><a href="">ENROLL</a></li>
-            <li><a href="">ACDEMIC PROGRAMS</a></li>
-            <li><a href="">CAMPUS</a></li>
-            <li><a href="">CONTACT US</a></li>
-           </ul> 
-        </nav>
-    </header>
-    <script src="../js/script.js"></script>
-    
+            <nav>        
+                <a href=""><img src="../img/logo/1.png" alt=""></a>
+               <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT US </a></li>
+                <li><a href="">ENROLL</a></li>
+                <li><a href="">ACDEMIC PROGRAMS</a></li>
+                <li><a href="">CAMPUS</a></li>
+                <li><a href="">CONTACT US</a></li>
+               </ul> 
+            </nav>
+
+            <!-- image slider -->
+            <div id="page">
+
+                </h1>
+                <div id="content">
+                  <div class="skitter-large-box">
+                    <div class="skitter skitter-large with-dots">
+                      <ul>
+                        <li><a href="#cube"><img src="../images/example/001-medium.jpg" class="circles" /></a><div class="label_text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#see-more" class="btn btn-small btn-yellow">See more</a></p></div></li>
+                        <li><a href="#cubeRandom"><img src="../images/example/002.jpg" class="circlesInside" /></a><div class="label_text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis voluptatum reprehenderit vitae amet beatae dolorem labore dignissimos nesciunt. Harum, blanditiis suscipit beatae unde id non, necessitatibus praesentium nisi quidem. <a href="#" class="btn btn-small btn-yellow">See more</a></p></div></li>
+                        <li><a href="#block"><img src="../images/example/003.jpg" class="circlesRotate" /></a><div class="label_text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="btn btn-small btn-yellow">See more</a></p></div></li>
+                        <li><a href="#cubeStop"><img src="../images/example/004.jpg" class="cube" /></a><div class="label_text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos nihil corrupti inventore id culpa repellat molestiae quam at molestias. <a href="#" class="btn btn-small btn-yellow">See more</a></p></div></li> 
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </header>    
 </body>
 </html>
