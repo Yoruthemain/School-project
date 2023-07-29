@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/splide.min.css">
+    <link rel="stylesheet" href="../css/splide-core.min.css">
     <link rel="stylesheet" href="../css/slider.css">
-    <!-- Skitter Styles -->
-    <link href="../css/skitter.css" type="text/css" media="all" rel="stylesheet" />
-   <!-- Skitter JS -->
-   <script src="../js/jquery.min.js"></script>
-   <script src="../js/jquery.ease.min.js"></script>
-   <script src="../js/jquery.skitter.min.js"></script>
-      <!-- Init Skitter -->
+    <script src="../js/splide.min.js"></script>
+      
   <script type="text/javascript" language="javascript">
     $(document).ready(function() {
       $('.skitter-large').skitter({
@@ -47,22 +44,41 @@
             </nav>
 
             <!-- image slider -->
-            <div id="page">
-
-                </h1>
-                <div id="content">
-                  <div class="skitter-large-box">
-                    <div class="skitter skitter-large with-dots">
-                      <ul>
-                        <li><a href="#cube"><img src="../images/slider/180627_Newark-FrontCorner_037.jpg" class="circles" /></a><div class="label_text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#see-more" class="btn btn-small btn-yellow">See more</a></p></div></li>
-                        <li><a href="#cubeRandom"><img src="../images/slider/OIP.jpeg" class="circlesInside" /></a><div class="label_text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis voluptatum reprehenderit vitae amet beatae dolorem labore dignissimos nesciunt. Harum, blanditiis suscipit beatae unde id non, necessitatibus praesentium nisi quidem. <a href="#" class="btn btn-small btn-yellow">See more</a></p></div></li>
-                        <li><a href="#block"><img src="../images/slider/R.jpeg" class="circlesRotate" /></a><div class="label_text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="btn btn-small btn-yellow">See more</a></p></div></li>
-                        <li><a href="#cubeStop"><img src="../images/slider/DonTre-Driving-School-New-Jersey-Driver-Training-30-Hour-Classroom-Driver-Theory-Course-768x512.jpg" class="cube" /></a><div class="label_text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos nihil corrupti inventore id culpa repellat molestiae quam at molestias. <a href="#" class="btn btn-small btn-yellow">See more</a></p></div></li> 
+            <section>
+              <div id="thumbnail-slider" class="splide">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                              <img src="../img/slide1.jpg">
+                              <div>
+                                Description 01
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                              <img src="../img/slide2.jpg">
+                              <div>
+                                Description 02
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                              <img src="../img/slide3.jpg">
+                              <div>
+                                Description 03
+                            </div>
+                          </li>
                       </ul>
+                </div>
+        
+                <div class="splide__progress">
+                    <div class="splide__progress__bar">
                     </div>
-                  </div>
                 </div>
               </div>
-    </header>    
+            </section>
+    </header>   
+    <main>
+        <!-- <img src="../images/example/001-medium.jpg" width="1050px" class="circles" /> -->
+    </main> 
+    <script src="../js/slider.js"></script>
 </body>
 </html>
