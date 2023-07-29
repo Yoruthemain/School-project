@@ -1,6 +1,4 @@
 let splide = new Splide( '#thumbnail-slider', {
-    // fixedWidth: 100,
-    // fixedHeight: 60,
     gap       : 10,
     type       : 'loop',
     cover      : true,
@@ -11,12 +9,12 @@ let splide = new Splide( '#thumbnail-slider', {
     pauseOnFocus: false,
     pagination: true,
     focus      : 'center',
-    breakpoints: {
-        600: {
-        fixedWidth : 60,
-        fixedHeight: 44,
-        },
-    },
+    // breakpoints: {
+    //     600: {
+    //     fixedWidth : 60,
+    //     fixedHeight: 44,
+    //     },
+    // },
 } ).mount();
 
 let toggleButton = splide.root.querySelector( '.my-toggle-button' );

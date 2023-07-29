@@ -5,7 +5,7 @@
     font-family:"poppins",sans-serif;
 }
 header{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     /* background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.3)); */
     background-color: white;
@@ -14,7 +14,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 80px 0px 80px;
+    padding: 10px 20px 10px 80px;
 }
 header>nav>ul>li{
     list-style-type: none;
@@ -41,5 +41,5 @@ header>nav>ul>li:hover::after{
     width: 100%;
 }
 header>nav img{
-  height: 150px;
+  height: 100px;
 }
