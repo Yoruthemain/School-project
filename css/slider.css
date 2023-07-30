@@ -23,8 +23,12 @@
         background-color: rgba(0, 0, 0, 0.5);
         margin: 15% auto;
         color: #fff;
+        padding: 20px 10px;
+       
+    }
+    .splide__slide h3{
         font-family: 'Times New Roman', Times, serif;
-        font-weight: 400;
+        font-weight: 900;
         letter-spacing: 1px;
-        font-size: 1.5rem;
+        font-size: 32px;
     }
