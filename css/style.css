@@ -51,7 +51,6 @@ header>.main-menu img{
     /* position: relative; */
     display: flex;
     justify-content: center;
-    z-index: ;
     margin: 0px;
 }
 
@@ -82,13 +81,12 @@ header>.main-menu img{
 
 .thumbnail-slider{
     position: relative;
-<<<<<<< HEAD
 
 }
 .card{
     box-shadow: ;
 }
-=======
+.thumbnail-slider{
     width: 100%;
     transform: translateY(-2.5rem);
 }
@@ -96,4 +94,3 @@ header>.main-menu img{
 main{
 
 }
->>>>>>> 62c4d733739cf9589e4076cbad0c409d95b05d27
