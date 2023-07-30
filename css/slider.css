@@ -1,34 +1,24 @@
 .splide__slide img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
-    }
+}
 .splide__progress__bar {
     height: 3px;
     background: #b4e900;
-    }
-    body{
-        margin: 0;
-    }
-    header section{
-        /* height: 100%;
-        width: 100%
-        background-color: #192123;
-        padding: 10px; */
-        
-    }
-    .splide__slide div{
-        width: 50%;
-        height: 17%;
-        background-color: rgba(0, 0, 0, 0.5);
-        margin: 15% auto;
-        color: #fff;
-        padding: 20px 10px;
-       
-    }
-    .splide__slide h3{
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 900;
-        letter-spacing: 1px;
-        font-size: 32px;
-    }
+}
+
+.splide__slide div{
+    width: 50%;
+    height: 17%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 15% auto;
+    color: #fff;
+    padding: 20px 10px;
+}
+.splide__slide h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 32px;
+}
