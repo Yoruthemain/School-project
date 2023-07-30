@@ -77,3 +77,6 @@ header>.main-menu img{
     top: 10%;
     z-index: -1;
 }
+main{
+    position: relative;
+}
