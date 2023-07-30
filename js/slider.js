@@ -1,4 +1,6 @@
 let splide = new Splide( '#thumbnail-slider', {
+    // fixedWidth: 100,
+    // fixedHeight: 60,
     gap       : 10,
     type       : 'loop',
     cover      : true,
