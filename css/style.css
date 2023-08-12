@@ -94,3 +94,10 @@ header>.main-menu img{
 main{
 
 }
+.row{
+     display: flex;
+    
+}
+.division-col{
+    flex-basis: 31%;
+}
