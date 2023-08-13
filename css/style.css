@@ -100,4 +100,63 @@ main{
 }
 .division-col{
     flex-basis: 31%;
+    margin: 30px 20px 20px 0px;  
+    /* height: 350px;  */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.division-col .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+    border-top:0.2rem solid navy;
+    transform: translate(10px,270px) ;
+    
+   
+}
+.bgimage1{
+ background-image: url(https://thembatutors.com/wp-content/uploads/2018/09/elementary.jpg);
+ background-size: cover;
+}
+.bgimage2{
+background-image: url(https://www.amle.org/wp-content/uploads/2021/02/12.jpg);
+background-size: cover;
+}
+.bgimage3{
+  background-image: url(https://www.onlinecoursereport.com/wp-content/uploads/2020/03/shutterstock_199317449-1280x853.jpg);
+  background-size: cover;
+  
+}
+.overlay h3{
+    color: white;
+    margin: 10px;
+}
+
+.overlay p{
+   
+    color: white;
+    /* height: 0px; */ 
+   font-weight: 400;
+   font-size: 17px;
+   display: none;
+
+}
+.overlay-subtitle{
+    max-height: 0px;
+    
+}
+/* Media Queries */
+@media ( max-width:680px) {
+    .row{
+        flex-direction: column;
+    }
+    .division-col .overlay{
+       
+       
+    }
+    .division-col{
+        height: ;
+    }
 }
