@@ -15,12 +15,12 @@ header{
     padding: 10px 20px 10px 80px;
     background-color: #fff;
 }
-header>nav>ul>li{
+header>nav ul>li{
     list-style-type: none;
     display: inline-block;
     padding: 0px 18px;
 }
-header>.main-menu>ul>li>a{
+header>.main-menu>.nav-links>ul>li>a{
     /* color: #140847; */
     color: #333743;
     text-decoration: none;
@@ -28,7 +28,7 @@ header>.main-menu>ul>li>a{
     font-weight: 600;
     line-height: 1.428;
 }
-header>.main-menu>ul>li::after{
+header>.main-menu>.nav-links>ul>li::after{
     content: "";
     width: 0%;
     height: 2px;
@@ -38,7 +38,7 @@ header>.main-menu>ul>li::after{
     transition: all 0.5s ease;
 
 }
-header>.main-menu>ul>li:hover::after{
+header>.main-menu>.nav-links>ul>li:hover::after{
     width: 100%;
 }
 
@@ -160,9 +160,9 @@ background-image: url(https://www.amle.org/wp-content/uploads/2021/02/12.jpg);
 }
 
 .overlay-subtitle{
-    max-height: 0px;
-    
+    max-height: 0px;   
 }
+
 /* Media Queries */
 @media ( max-width:680px) {
     .row{
@@ -197,5 +197,16 @@ background-image: url(https://www.amle.org/wp-content/uploads/2021/02/12.jpg);
         font-weight: 500;
         color: #777;
         margin-bottom: 20px;
+    }
+    /* Nav section */
+    header>nav>.nav-links>ul>li{
+   display: block;
+
+    }
+    header>nav>.nav-links{
+        position: absolute;
+        background-color: #f47c00;
+        position: absolute;
+        top: 0;
     }
 }
