@@ -6,8 +6,7 @@
 }
 header{
     width: 100%;
-    /* background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.3)); */
-    /* background-color: #192123; */
+    margin: 0px;
 }
 .main-menu{
     display: flex;
@@ -96,16 +95,40 @@ header>.main-menu img{
     display: flex;
 }
 
+/* section designs */
+.section-container{
+width: 80%;
+margin: 50px auto;
+text-align: center;
+}
+
+.section-container h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.section-container>p{
+   font-size: 20px;
+   line-height: 25px;
+   font-weight: 500;
+   color: #777;
+   margin-bottom: 40px;
+}
+/* end section designs */
+
 /* division section */
 #division{
     height: 550px;
-    width: 100%;
 }
 
 /* columns for division */
 .division-col{
-    flex-basis: 31%;
-    margin: 30px 20px 20px 0px;
+    flex-basis: 32%;
+    margin: 20px 40px 0px 0px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* division overlay */
@@ -117,7 +140,7 @@ header>.main-menu img{
     /* position: absolute; */
     /* bottom: 0; */
     /* transform: translate(8%, 320%); */
-    transform: translate(5%, 90%);
+    transform: translate(8%, 560%);
     border-top:0.2rem solid navy;
 }
 
@@ -126,30 +149,14 @@ header>.main-menu img{
 }
 
 
-/* .division-col .overlay>h3{
-    padding: 20px;
-    line-height: 24px;
-} */
-
-/* .division-col .overlay>p{
-    flex-basis: 32%;
-    margin: 20px 40px 0px 0px;
-    height: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
 .bgimage1{
  background-image: url(https://thembatutors.com/wp-content/uploads/2018/09/elementary.jpg);
- background-size: cover;
 }
 .bgimage2{
 background-image: url(https://www.amle.org/wp-content/uploads/2021/02/12.jpg);
-background-size: cover;
 }
 .bgimage3{
   background-image: url(https://www.onlinecoursereport.com/wp-content/uploads/2020/03/shutterstock_199317449-1280x853.jpg);
-  background-size: cover;
 }
 
 .overlay-subtitle{
@@ -160,5 +167,35 @@ background-size: cover;
 @media ( max-width:680px) {
     .row{
         flex-direction: column;
+    }
+
+    /* column */
+    .division-col{
+        margin: 40px 0px 40px 0px;
+        min-height: 350px;
+        /* background: #333743; */
+    }
+
+    /* overlay */
+    .division-col>.overlay{
+        transform: translate(5%, 400%);
+    }
+
+    .section-container{
+        margin: 20px auto;
+    }
+
+    .secction-container>h1{
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    .section-container>p{
+        font-size: 15px;
+        line-height: 15px;
+        font-weight: 500;
+        color: #777;
+        margin-bottom: 20px;
     }
 }
