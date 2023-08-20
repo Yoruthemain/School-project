@@ -1,0 +1,63 @@
+<style>
+    section{
+        height: 550px;
+        /* background-color: blue; */
+    }
+    .row{
+        display: flex;
+    }
+
+    .col{
+        flex-basis: 32%;
+        margin: 20px 40px 0px 0px;
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .overlay{
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+        margin: 10px;
+        padding: 20px;
+        /* position: absolute; */
+        /* bottom: 0; */
+        transform: translate(8%, 320%);
+    }
+
+    .overlay>.content>p{
+        display: none;
+    }
+
+    .bg-img-1{
+        background-image: url(../images/example/001-small.jpg);
+    }
+</style>
+
+<section>
+    <div class="row">
+        <div class="col bg-img-1">
+            <div class="overlay">
+                <div class="content">
+                    <h3>Middle</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col bg-img-2">
+            <div class="overlay">
+                <div class="content">
+                    <h3>Middle</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col bg-img-3">
+            <div class="overlay">
+                <div class="content">
+                    <h3>Middle</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

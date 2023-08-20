@@ -91,48 +91,54 @@ header>.main-menu img{
     transform: translateY(-2.5rem);
 }
 
-main{
-
-}
+/* flex to row */
 .row{
-     display: flex;
-    
+    display: flex;
 }
+
+/* division section */
+#division{
+    height: 550px;
+    width: 100%;
+}
+
+/* columns for division */
 .division-col{
     flex-basis: 31%;
     margin: 30px 20px 20px 0px;
 }
 
-.division-col .overlay{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 250px;
-    text-align: left;
+/* division overlay */
+.division-col>.overlay{
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* transform: translate(8%, 320%); */
+    transform: translate(5%, 90%);
+    border-top:0.2rem solid navy;
 }
 
-.division-col .overlay>h3{
+.division-col>.overlay>.content>p{
+    display: none;
+}
+
+
+/* .division-col .overlay>h3{
     padding: 20px;
     line-height: 24px;
-}
+} */
 
-.division-col .overlay>p{
-    height: 0%;
-    margin: 30px 20px 20px 0px;  
-    height: 350px; 
-    background-position: center;
+/* .division-col .overlay>p{
+    flex-basis: 32%;
+    margin: 20px 40px 0px 0px;
+    height: 450px;
     background-repeat: no-repeat;
-}
-.division-col .overlay{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    text-align: left;
-    border-top:0.2rem solid navy;
-    transform: translate(10px,270px) ;
-    
-   
-}
+    background-size: cover;
+} */
+
 .bgimage1{
  background-image: url(https://thembatutors.com/wp-content/uploads/2018/09/elementary.jpg);
  background-size: cover;
@@ -144,22 +150,8 @@ background-size: cover;
 .bgimage3{
   background-image: url(https://www.onlinecoursereport.com/wp-content/uploads/2020/03/shutterstock_199317449-1280x853.jpg);
   background-size: cover;
-  
-}
-.overlay h3{
-    color: white;
-    margin: 10px;
 }
 
-.overlay p{
-   
-    color: white;
-    /* height: 0px; */ 
-   font-weight: 400;
-   font-size: 17px;
-   display: none;
-
-}
 .overlay-subtitle{
     max-height: 0px;
     
@@ -168,12 +160,5 @@ background-size: cover;
 @media ( max-width:680px) {
     .row{
         flex-direction: column;
-    }
-    .division-col .overlay{
-       
-       
-    }
-    .division-col{
-        height: ;
     }
 }
