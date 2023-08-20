@@ -208,5 +208,8 @@ background-image: url(https://www.amle.org/wp-content/uploads/2021/02/12.jpg);
         background-color: #f47c00;
         position: absolute;
         top: 0;
+        right: 0;
+        height: 100vh;
+        z-index: 2;
     }
 }
